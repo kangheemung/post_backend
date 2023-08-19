@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/index'=>'posts#index'
+  get 'posts/index'=>'posts#index'
   get 'posts/new'=>'posts#new'
   post'posts'=>'posts#create'
   get 'posts/edit'=>'posts#edit'
