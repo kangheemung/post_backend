@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+    (1..100).each do |post|
+        Post.create(title:"test title#{post}",content: "this is atest body #{post}")
+        puts "number of #{post}were created"
+    end
